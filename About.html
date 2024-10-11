@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOYAL DOMESTIC</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Style/Home.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="Style/Home.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <!-- Mini Nav -->
+        <div class="bg-blue-500 p-2 flex justify-center sm:pl-0 hidden lg:flex">
+            <div class="flex space-x-6 pl-40">
+                <a href="tel:+918112292383" class="text-white"><i class="fa-solid fa-phone"></i> +91 811 229 2383</a>
+                <a href="mailto:goyaldomesticpackers@gmail.com" class="text-white"><i class="fa-solid fa-envelope"></i>
+                    goyaldomesticpackers@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- Main Nav -->
+        <div class="bg-white flex items-center justify-between ">
+            
+            <!-- Logo Text -->
+            <a href="index.html" class="flex-shrink-0 pl-4 lg:pl-40">
+                <img src="Images/Logo_Images/logoimg.jpeg" alt="" class="h-24">
+            </a>
+
+            <!-- Toggle Button -->
+            <button id="menu-toggle" class="lg:hidden px-4 py-2 text-blue-600">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Main Menu -->
+            <div class="hidden lg:flex lg:items-center lg:justify-center lg:flex-grow">
+                <ul class="flex space-x-8 text-lg">
+                    <li><a href="index.html" class="text-blue-600 hover:text-blue-800 cursor-pointer">Home</a></li>
+                    <li><a href="About.html" class="text-blue-700 hover:text-blue-800 cursor-pointer">About Us</a></li>
+                    <li class="relative dropdown">
+                        <a href="#" class="text-blue-700 hover:text-blue-800 cursor-pointer flex items-center">Services
+                            <i class="fas fa-caret-down ml-1"></i></a>
+                        <ul
+                            class="absolute left-0 w-48 mt-2 py-2 bg-white border border-gray-200 rounded shadow-lg dropdown-content">
+                            <li><a href="Residential.html"
+                                    class="block px-4 py-2 text-blue-700 hover:bg-gray-100">Residential Relocation</a>
+                            </li>
+                            <li><a href="Car-Relocation.html"
+                                    class="block px-4 py-2 text-blue-700 hover:bg-gray-100">Car Relocation</a></li>
+                            <li><a href="Office-Relocation.html"
+                                    class="block px-4 py-2 text-blue-700 hover:bg-gray-100">Office Relocation</a></li>
+                            <li><a href="Loading.html" class="block px-4 py-2 text-blue-700 hover:bg-gray-100">Loading
+                                    and Unloading</a></li>
+                            <li><a href="Warehousing.html"
+                                    class="block px-4 py-2 text-blue-700 hover:bg-gray-100">Warehousing and Storage</a>
+                            </li>
+                            <li><a href="Packing.html" class="block px-4 py-2 text-blue-700 hover:bg-gray-100">Packing
+                                    and Moving</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Location-Jaipur.html"
+                            class="text-blue-700 hover:text-blue-800 cursor-pointer">Location</a></li>
+                    <li><a href="FAQs.html" class="text-blue-700 hover:text-blue-800 cursor-pointer">FAQs</a></li>
+                    <li><a href="Contact.html" class="text-blue-700 hover:text-blue-800 cursor-pointer">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Side Navbar for Mobile -->
+    <div id="side-navbar" class="side-navbar">
+        <div class="flex justify-end p-4">
+            <button id="close-menu" class="text-blue-600">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="space-y-4 px-4 py-6">
+            <li><a href="index.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100">Home</a></li>
+            <li><a href="About.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100">About Us</a></li>
+            <li class="relative dropdown">
+                <a href="#" class="block px-4 py-2 text-blue-600 hover:bg-gray-100 flex items-center">Services <i
+                        class="fas fa-caret-down ml-1"></i></a>
+                <ul class="mt-2 space-y-2 bg-white border border-gray-200 rounded shadow-lg dropdown-content">
+                    <li><a href="Residential.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100">Residential
+                            Relocation</a></li>
+                    <li><a href="Car-Relocation.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100">Car
+                            Relocation</a></li>
+                    <li><a href="Office-Relocation.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100">Office
+                            Relocation </a></li>
+                    <li><a href="Loading.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100">Loading and
+                            Unloading</a>
+                    </li>
+                    <li><a href="Warehousing.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100">Warehousing
+                            and Storage</a>
+                    </li>
+                    <li><a href="Packing.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100">Packing and
+                            Moving</a></li>
+                </ul>
+            </li>
+            <li><a href="Location-Jaipur.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100">Location</a></li>
+            <li><a href="FAQs.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100">FAQs</a></li>
+            <li><a href="Contact.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100">Contact Us</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Popup Form -->
+    <div id="popup" class="popup-overlay">
+        <div id="popup-content" class="popup-content">
+            <button id="close-popup" class="close-icon">
+                <i class="fas fa-times"></i>
+            </button>
+            <i class="fas fa-envelope message-icon"></i>
+            <h2 class="text-xl font-bold mb-4 text-blue-600">We have Some Amazing Offer for You!</h2>
+            <form id="popup-form">
+                <input type="text" id="name" name="name" placeholder="Name"
+                    class="w-full px-3 py-2 border border-gray-300 rounded mb-4">
+                <input type="email" id="email" name="email" placeholder="Email"
+                    class="w-full px-3 py-2 border border-gray-300 rounded mb-4">
+                <input type="tel" id="phone" name="phone" placeholder="Phone"
+                    class="w-full px-3 py-2 border border-gray-300 rounded mb-4">
+                <input type="text" id="move-from" name="move-from" placeholder="Move From"
+                    class="w-full px-3 py-2 border border-gray-300 rounded mb-4">
+                <input type="text" id="move-to" name="move-to" placeholder="Move To"
+                    class="w-full px-3 py-2 border border-gray-300 rounded mb-4">
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Our Mission Section Background -->
+    <section class="relative py-12 bg-white">
+        <!-- Background Image -->
+        <div class="absolute inset-0 overflow-hidden h-[400px]">
+            <img src="Images/About_Images/about-img.png" alt="Background Image"
+                class="w-full h-full object-cover opacity-80"> <!-- Slightly reduced opacity -->
+        </div>
+
+        <!-- Text Overlay -->
+        <div class="relative container mx-auto px-4 py-12 z-10">
+            <div class="bg-gray-900 bg-opacity-60 p-8 rounded-lg max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-6 text-white">Our Mission</h2>
+                <p class="text-lg text-center text-white">
+                    At GOYAL DOMESTIC, our mission is to deliver exceptional moving services tailored to your needs.
+                    We strive to make every relocation seamless and stress-free, ensuring a smooth transition for you
+                    and your belongings.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Who are GOYAL DOMESTIC Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-20">
+            <h2 class="text-3xl font-bold text-center mb-8 text-blue-500">Who are GOYAL DOMESTIC?</h2>
+            <div class="flex flex-wrap items-center">
+                <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                    <img src="Images/About_Images/about-2.png" alt="About Us"
+                        class="rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+                </div>
+                <div class="w-full md:w-1/2 md:pl-10">
+                    <p class="text-lg mb-4">GOYAL DOMESTIC is a technology-driven company dedicated to providing
+                        top-quality, reliable packing and moving services across India. With our cutting-edge platform,
+                        we strive to be recognized as India’s premier relocation service provider.</p>
+                    <p class="text-lg mb-4">As a leading name in the movers and packers industry, GOYAL DOMESTIC
+                        offers stress-free, door-to-door services that make moving effortless and convenient. Whether
+                        it's a residential move or a commercial relocation, our team is fully equipped to handle all
+                        your packing and moving needs efficiently.</p>
+                    <p class="text-lg">We pride ourselves on our transparent pricing with no hidden charges. At Morvi
+                        Relocation, our competitive rates start only after we've confirmed your location. Experience the
+                        best moving solutions with GOYAL DOMESTIC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-12 bg-blue-100">
+        <div class="container mx-auto px-20">
+            <h2 class="text-3xl font-bold text-center mb-8 text-blue-500">Why Choose Us?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Reason 1 -->
+                <div
+                    class="bg-white rounded-lg shadow-xl p-6 flex flex-col items-center transition-transform transform hover:scale-105 duration-300">
+                    <div class="mb-4">
+                        <svg class="w-16 h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm1-13H9v6h4V7zm-1 5H9v-1h3v1z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-1xl font-semibold mb-2">Comprehensive Moving Solutions</h3>
+                    <p class="text-center text-gray-600">GOYAL DOMESTIC offers a full suite of moving services
+                        including packing, loading, unloading, transportation, and unpacking. Our experienced team
+                        ensures a seamless experience from start to finish.</p>
+                </div>
+
+                <!-- Reason 2 -->
+                <div
+                    class="bg-white rounded-lg shadow-xl p-6 flex flex-col items-center transition-transform transform hover:scale-105 duration-300">
+                    <div class="mb-4">
+                        <svg class="w-16 h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 3v6.29l4.29-4.29a1 1 0 011.41 1.42l-5 5a1 1 0 01-1.41 0l-5-5a1 1 0 011.41-1.42L11 9.29V3a1 1 0 012 0zm0 18a10 10 0 100-20 10 10 0 000 20zm0-4a6 6 0 100-12 6 6 0 000 12z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-1xl font-semibold mb-2">Expert Team</h3>
+                    <p class="text-center text-gray-600">Our team comprises skilled professionals with extensive
+                        experience in relocation services. We are committed to delivering expert care and precision to
+                        ensure your move is handled with the utmost efficiency.</p>
+                </div>
+
+                <!-- Reason 3 -->
+                <div
+                    class="bg-white rounded-lg shadow-xl p-6 flex flex-col items-center transition-transform transform hover:scale-105 duration-300">
+                    <div class="mb-4">
+                        <svg class="w-16 h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-1xl font-semibold mb-2">Customer-Centric Approach</h3>
+                    <p class="text-center text-gray-600">We prioritize our clients' needs and work to exceed
+                        expectations at every step. Our customer-centric approach ensures that each move is tailored to
+                        your specific requirements, making your relocation as smooth as possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Image Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-20">
+            <div class="flex flex-wrap justify-between">
+                <!-- Service Image 1 -->
+                <div class="w-full md:w-1/3 px-4 mb-4">
+                    <img src="Images/Home_Images/background-img.png" alt="Residential Moves"
+                        class="w-full h-auto rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
+                    <p class="text-center mt-4 font-semibold text-lg text-gray-500">Residential Moves</p>
+                </div>
+
+                <!-- Service Image 2 -->
+                <div class="w-full md:w-1/3 px-4 mb-4">
+                    <img src="Images/About_Images/about-1.jpeg" alt="Corporate Relocation"
+                        class="w-full h-auto rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
+                    <p class="text-center mt-4 font-semibold text-lg text-gray-500">Corporate Relocation</p>
+                </div>
+
+                <!-- Service Image 3 -->
+                <div class="w-full md:w-1/3 px-4 mb-4">
+                    <img src="Images/About_Images/abou-img1 (2).jpeg" alt="Warehousing and Storage"
+                        class="w-full h-auto rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
+                    <p class="text-center mt-4 font-semibold text-lg text-gray-500">Warehousing and Storage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Map Section -->
+    <div class="py-12 bg-blue-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-500">Locate Us</h2>
+            <div class="relative overflow-hidden rounded-lg shadow-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3557.8342179333017!2d75.719077!3d26.908756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDU0JzMxLjUiTiA3NcKwNDMnMDguNyJF!5e0!3m2!1sen!2sin!4v1722338866110!5m2!1sen!2sin" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="text-center mt-4">
+                <a href="https://maps.app.goo.gl/UqopEtipndVwCHqn7" target="_blank"
+                    class="text-blue-500 hover:underline">
+                    View on Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Footer Top Section -->
+            <div class="flex flex-wrap justify-between mb-6">
+                <!-- Important Links -->
+                <div class="w-full md:w-1/4 mb-4 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-2">Important Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:underline">Home</a></li>
+                        <li><a href="About.html" class="hover:underline">About</a></li>
+                        <li><a href="#" class="hover:underline">Services</a></li>
+                        <li><a href="Location-Jaipur.html" class="hover:underline">Location</a></li>
+                        <li><a href="FAQs.html" class="hover:underline">FAQs</a></li>
+                        <li><a href="Contact.html" class="hover:underline">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="w-full md:w-1/4">
+                    <h3 class="text-xl font-semibold mb-2">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="Residential.html" class="hover:underline">Residential Relocation Services</a></li>
+                        <li><a href="Car-Relocation.html" class="hover:underline">Car Relocation Service</a></li>
+                        <li><a href="Office-Relocation.html" class="hover:underline">Office Relocation Services</a></li>
+                        <li><a href="Loading.html" class="hover:underline">Loading and unloading services</a></li>
+                        <li><a href="Warehousing.html" class="hover:underline">Warehousing and storage services</a></li>
+                        <li><a href="Packing.html" class="hover:underline">Packing and Moving Service Jaipur</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="w-full md:w-1/4 mb-4 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-2">Contact Us</h3>
+                    <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+918112292383"
+                            class="hover:underline">+91811 229 2383</a></p>
+                    <p class="mb-1"><i class="fa-solid fa-envelope"></i> <a href="mailto:goyaldomesticpackers@gmail.com"
+                            class="hover:underline">goyaldomesticpackers@gmail.com</a></p>
+                    <p class="mb-1"><i class="fa-solid fa-map-marker-alt"></i> F-38 Maa Karni Nagar Maharana Pratap Marg Rongoli Garden Road Jaipur Rajasthan </p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="w-full md:w-1/4 mb-4 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-2">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com" class="text-white hover:text-gray-400" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" class="text-white hover:text-gray-400" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" class="text-white hover:text-gray-400" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="text-white hover:text-gray-400" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="border-t border-white pt-4 text-center">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-col space-y-4">
+        <a href="tel:+918112292383" class="action-button call-button" aria-label="Call">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://wa.me/918112292383" class="action-button whatsapp-button" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+
+
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="Js/Home.js"></script>
+
+
+
+</body>
+
+</html>
